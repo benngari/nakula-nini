@@ -1,0 +1,121 @@
+.panel { animation: fadeUp 0.25s ease both; }
+
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  margin-bottom: 0.75rem;
+}
+
+.cardHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.85rem;
+}
+
+.cardTitle {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.clearBtn {
+  background: none;
+  border: none;
+  color: var(--red);
+  font-size: 0.78rem;
+  font-weight: 500;
+  opacity: 0.75;
+  transition: opacity 0.15s;
+}
+
+.clearBtn:hover { opacity: 1; }
+
+.list { display: flex; flex-direction: column; gap: 0.5rem; }
+
+.pickItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.7rem 0.9rem;
+  background: var(--cream);
+  border-radius: 10px;
+}
+
+.pickEmoji { font-size: 1.5rem; flex-shrink: 0; }
+
+.pickInfo { flex: 1; min-width: 0; }
+
+.pickName {
+  font-weight: 600;
+  font-size: 0.88rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pickMeta { font-size: 0.73rem; color: var(--text-muted); }
+
+.pickCost {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--green);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.delBtn {
+  background: none;
+  border: none;
+  color: var(--red);
+  font-size: 0.85rem;
+  opacity: 0.45;
+  padding: 0.2rem 0.3rem;
+  flex-shrink: 0;
+  transition: opacity 0.15s;
+}
+
+.delBtn:hover { opacity: 1; }
+
+.empty {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.emptyIcon { display: block; font-size: 2.2rem; margin-bottom: 0.5rem; }
+
+.summaryGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+}
+
+.summaryCard {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.summaryLabel {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 0.25rem;
+}
+
+.summaryValue {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--green);
+  letter-spacing: -0.03em;
+}

@@ -62,7 +62,7 @@ export default function App() {
       </main>
 
       <footer className={styles.footer}>
-        USILALE NJAA!
+        USILALE NJAA BOIS!
       </footer>
 
       <Toast msg={toast.msg} visible={toast.visible} />
